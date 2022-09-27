@@ -1,0 +1,101 @@
+
+body{
+  background:#d4dcdf}
+main{
+  width:100%;margin:0 auto;
+  min-height:100vh;display:grid;
+  grid-template-columns:1fr}
+#logo{
+  position:absolute;
+  top:20px;left:20px
+}
+.menu_opciones{
+  justify-self:center;
+  display:flex;
+  justify-content:space-around}
+  @media screen and (max-width: 600px){
+    .menu_opciones{width:100%;flex-direction:column}}
+    .menu_opciones .botones{margin:5px 5px 30px;width:275px;padding:20px 20px}
+    @media screen and (max-width: 600px){
+      .menu_opciones .botones{margin:10px auto;width:90%}}
+      .botones{
+        font-size:18px;
+        padding:10px;
+        border-radius:10px;
+        margin:10px auto;
+        outline:none;
+        cursor:pointer}
+      .botones.primario{
+        border:none;
+        background:#0a3871;
+        border-color:#dcdde1;
+        color:#dcdde1;transition:.5s}
+        .botones.primario:hover
+        {background:#0e4fa0}
+        .botones.secundario{
+          border:2px solid;
+          background:#dcdde1;
+          border-color:#0a3871;
+          color:#0a3871}
+          footer{background:#d4dcdf}
+          footer h2{
+            max-width:100%;
+            padding:20px 10px;
+            color:#f5f6fa;
+            font-size:20px;
+            font-family:"Open Sans",sans-serif;
+            line-height:25px}
+            @media screen and (max-width: 500px){
+              footer h2{font-size:18px}}
+              @media screen and (max-width: 400px)
+              {footer h2{font-size:16px}}
+              .comenzar{
+                place-self:center;
+                display:flex;
+                flex-direction:column;
+                padding:20px}
+                .comenzar #iniciar{
+                  padding:40px 10%;width:350px}
+                  .comenzar #agregar{
+                    width:250px
+                    ;padding:20px 6%}
+      @media screen and (max-width: 400px)
+      {
+        .comenzar{width:100%}
+        .comenzar 
+        .botones{margin:10px auto}
+        .comenzar #agregar{width:70%}
+        .comenzar #iniciar{width:90%}}
+        .agregar_datos{display:grid;grid-template-rows:1fr auto}
+        .agregar_datos #agregar_palabras{
+          width:570px;
+          justify-self:center;
+          align-self:flex-start;
+          margin:120px auto;
+          padding:20px;
+          background:none;
+          border:none;
+          outline:none;
+          font-size:28px;
+          color:#0a3871}
+          .agregar_datos #agregar_palabras::-moz-placeholder{color:#0a3871}
+          .agregar_datos #agregar_palabras:-ms-input-placeholder{color:#0a3871}
+          .agregar_datos #agregar_palabras::placeholder{color:#0a3871}
+          @media screen and (max-width: 620px){.agregar_datos #agregar_palabras{width:80%}}
+          @media screen and (max-width: 370px){.agregar_datos #agregar_palabras{font-size:24px}}
+          @media screen and (max-width: 270px){.agregar_datos #agregar_palabras{font-size:22px}}
+          .agregar_datos #advertencia{
+            font-family:Verdana,Geneva,Tahoma,sans-serif;font-size:15px;justify-self:center;font-weight:bold;margin:20px auto;padding-left:20px;color:#dcdde1;width:570px}
+            @media screen and (max-width: 620px){
+              .agregar_datos #advertencia{width:80%}}
+              .dibujo{display:grid;grid-template-columns:1fr;grid-template-rows:1fr .5fr auto}
+              .dibujo .munheco{justify-self:flex-end;margin-top:90px}
+              .dibujo .letras{margin:50px auto 10px}
+              .dibujo canvas{place-self:center}
+              #presionar_teclas{position:absolute;padding:0px;width:.5px;left:calc(100% - .5px);top:75%;border:none;color:#d4dcdf;background:none;outline:none;text-decoration:none;cursor:default}
+              #presionar_teclas::-moz-placeholder{color:#d4dcdf}
+              #presionar_teclas:-ms-input-placeholder{color:#d4dcdf}
+              #presionar_teclas::placeholder{color:#d4dcdf}
+              #presionar_teclas:focus{outline:none}
+              .oculto{display:none}
+              /*# sourceMappingURL=style.css.map */
